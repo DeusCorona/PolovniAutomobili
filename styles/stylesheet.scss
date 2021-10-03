@@ -1,0 +1,380 @@
+/*CSS reset begin*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td, 
+aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+a
+{
+    display: inline-block;
+    text-decoration: none;
+}
+
+img
+{
+    width: 100%;
+    height: auto;
+}
+
+video
+{
+    position: relative;
+    z-index: -1;
+    width: 100%;
+    height: auto;
+    display: block;
+    filter:brightness(0.2) ;
+}
+
+button
+{
+    border-style: none;
+}
+
+input
+{
+    max-width: 80%;
+}
+/*CSS reset end */
+
+$darkGray: rgb(50, 50, 50);
+$jetBlack: rgb(10, 10, 10);
+$white: rgb(255, 255, 255);
+$amber: rgb(255, 191, 0);
+$chilli: rgb(227,34,39);
+$tangerine: rgb(242, 133, 0);
+
+::selection
+{
+    color: $white;
+    background-color: $tangerine;
+}
+
+.paddings
+{
+    &__horizontal
+    {
+        padding-left: 10%;
+        padding-right: 10%;
+        &--small
+        {
+            padding-left: 1%;
+            padding-right: 1%;
+        }
+    }
+
+    &__vertical
+    {
+        padding-top: 1%;
+        padding-bottom: 1%;
+        &--large
+        {
+            padding-top: 5%;
+            padding-bottom: 5%;
+        }
+    }
+}
+
+.colorSchemes
+{
+    &__whiteDarkGray
+    {
+        color: $white;
+        background-color: $darkGray;
+    }
+    &__whiteJetBlack
+    {
+        color: $white;
+        background-color: $jetBlack;
+    }
+    &__whiteChilli
+    {
+        color: $white;
+        background-color: $chilli;
+    }
+    &__whiteTangerine
+    {
+        color: $white;
+        background-color: $tangerine;
+    }
+    &__amberDarkGray
+    {
+        color: $amber;
+        background-color: $darkGray;
+    }
+    &__tangerineJetBlack
+    {
+        color: $tangerine;
+        background-color: $jetBlack;
+    }
+    &__amberTransparent
+    {
+        color: $amber;
+        background-color: transparent;
+    }
+    &__chilliTransparent
+    {
+        color: $chilli;
+        background-color: transparent;
+    }
+    &__whiteTransparent
+    {
+        color: $white;
+        background-color: transparent;
+    }
+    &__jetBlackTangerine
+    {
+        color: $jetBlack;
+        background-color: $tangerine;
+    }
+    &__darkGrayTransparent
+    {
+        color: $darkGray;
+        background-color: transparent;
+    }
+}
+
+.fonts
+{
+    &__stylish
+    {
+        font-family: 'Play', sans-serif;
+        font-size: 1.5rem;
+        font-weight: bold;
+    }
+    &__ordinary
+    {
+        font-size: 1rem;
+        font-family: 'Open Sans', sans-serif;
+    }
+}
+
+@media screen and (max-width: 1024px) 
+{
+    .column100-mobile {width: 100%;}
+    .column75-mobile {width: 75%;}
+    .column50-mobile {width: 50%;}
+    .column25-mobile {width: 25%;}
+
+    .mobileLayout
+    {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: center;
+        &--spaceAround
+        {
+            justify-content: space-around;
+        }
+        &--alignRight
+        {
+            text-align: right;
+        }
+        &--alignLeft
+        {
+            text-align: left;
+        }
+        &--alignCenter
+        {
+            text-align: center;
+        }
+        &--reverse
+        {
+            flex-wrap: wrap-reverse;
+        }
+    }
+
+    .visibleOnDesktop
+    {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 1025px) 
+{
+    .column100 {width: 100%;}
+    .column75 {width: 75%;}
+    .column50 {width: 50%;}
+    .column25 {width: 25%;}
+
+    .desktopLayout
+    {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        &--alignLeft
+        {
+            text-align: left;
+        }
+        &--alignCenter
+        {
+            text-align: center;
+        }
+        &--alignRight
+        {
+            text-align: right;
+        }
+    }
+
+    .visibleOnMobile
+    {
+        display: none;
+    }
+}
+
+.header
+{
+    &__button
+    {
+        cursor: pointer;
+        padding: 1% 1% 1% 1%;
+        display: inline-block;
+        &--menu
+        {
+            border-radius: 10%;
+        }
+        &:hover
+        {
+            color: $tangerine;
+            background-color: $darkGray;
+            transition-duration: 1s;
+        }
+    }
+    &__dropdownContainer
+    {
+        position: absolute;
+        display: none;
+        z-index: 3;
+        &--content
+        {
+            width: 100%;
+        }
+    }
+}
+
+.main
+{
+    &__CTA
+    {
+        @media screen and (max-width: 1024px)
+        {
+            font-size: 1.3rem;            
+        }
+        @media screen and (min-width: 1025px) 
+        {
+            font-size: 2rem;            
+        }
+        &--proposition
+        {
+            font-weight: bold;
+            @media screen and (max-width: 1024px)
+            {
+                font-size: 2rem;            
+            }
+            @media screen and (min-width: 1025px) 
+            {
+                font-size: 4rem;            
+            }
+        }
+    }
+    &__carouselImage
+    {
+        height: 30vh;
+        width: auto;
+        max-width: 100%;
+    }
+    &__sectionTitle
+    {
+        font-size: 2rem;
+    }
+    &__button
+    {
+        cursor: pointer;
+        border-radius: 2rem;
+        @media screen and (min-width: 490px)
+        {
+            padding: 1% 2% 1% 2%;            
+        }
+        &:hover
+        {
+            color: $tangerine;
+            background-color: $darkGray;
+            transition-duration: 1s;
+        }
+    }
+    &__circularImage
+    {
+        border-radius: 5%;
+        &--grayscale
+        {
+            filter: grayscale(0.9);
+        }
+    }
+    &__backgroundImage
+    {
+        background:rgba(0, 0, 0, 0.85)url(../images/carBackground.jpg);
+        background-size: cover;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-blend-mode: darken;
+        &--COA
+        {
+            @media screen and (max-width: 1024px)
+            {
+                background:rgba(0, 0, 0, 0.85)url(../images/volkswagen.jpg);
+                background-attachment: fixed;
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-blend-mode: darken;
+            }
+        }
+    }
+    &__gridSystem
+    {
+        display: grid;
+        grid-template: repeat(3, [row] 1fr) / repeat(3, [col] 1fr);
+        &__gridElement
+        {
+            &--video
+            {
+                align-items: center;
+                justify-items: center;
+                grid-column: 1 / span 3;
+                grid-row: 1 / span 3;
+            }
+            &--CTA
+            {
+                align-items: center;
+                justify-items: center;
+                grid-column: 1 / span 3;
+                grid-row: 2;
+                z-index: 2;
+            }
+            &--dialogue
+            {
+                border-radius: 1rem;
+                display: none;
+                grid-column: 2;
+                grid-row: 2;
+                z-index: 3;
+            }
+        }
+    }
+}

@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Najveci prodavac polovnih vozila u Srbiji">
+        <link rel="stylesheet" href="styles/stylesheet.css">
+        <link rel="icon" type="image/x-icon" href="icons/siteIcon.ico"/>
+        <title>Polovni automobili</title>
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Play&display=swap" rel="stylesheet">
+    </head>
+
+    <body class="desktopLayout--alignLeft mobileLayout--alignCenter fonts__ordinary">
+        <header class="mobileLayout mobileLayout--spaceAround desktopLayout paddings__horizontal paddings__vertical colorSchemes__whiteDarkGray">
+            <div class="column25 column75-mobile">
+                <h2 class="fonts__stylish">
+                    <span class="colorSchemes__amberDarkGray">POLOVNI</span> <span class="colorSchemes__chilliTransparent">AUTOMOBILI</span>
+                </h2>
+            </div>
+
+            <nav class="visibleOnDesktop column75 desktopLayout--alignRight">
+                <a href="#oglasi" class="header__button colorSchemes__whiteDarkGray">
+                    OGLASI
+                </a>
+
+                <a href="#uslugeKojeNudimo" class="header__button colorSchemes__whiteDarkGray">
+                    USLUGE
+                </a>
+
+                <a href="#nasiPartneri" class="header__button colorSchemes__whiteDarkGray">
+                    NAŠI PARTNERI
+                </a>
+
+                <a href="#oNama" class="header__button colorSchemes__whiteDarkGray">
+                    O NAMA
+                </a>
+
+                <a href="#kontakt" class="header__button colorSchemes__whiteDarkGray">
+                    KONTAKT
+                </a>
+
+                <button class="header__button colorSchemes__whiteDarkGray fonts__ordinary">
+                    ULOGUJ SE
+                </button>
+            </nav>
+
+            <div class="visibleOnMobile column25-mobile">
+                <button id="menuButton" class="header__button--menu colorSchemes__jetBlackTangerine">
+                    <img src="images/menu.png" alt="menu icon">
+                </button>
+
+                <div id="dropdownContainer" class="header__dropdownContainer">
+                    <a href="#oglasi" class="header__button colorSchemes__whiteDarkGray header__dropdownContainer--content">
+                        OGLASI
+                    </a>
+    
+                    <a href="#uslugeKojeNudimo" class="header__button colorSchemes__whiteDarkGray header__dropdownContainer--content">
+                        USLUGE
+                    </a>
+    
+                    <a href="#nasiPartneri" class="header__button colorSchemes__whiteDarkGray header__dropdownContainer--content">
+                        NAŠI PARTNERI
+                    </a>
+    
+                    <a href="#oNama" class="header__button colorSchemes__whiteDarkGray header__dropdownContainer--content">
+                        O NAMA
+                    </a>
+    
+                    <a href="#kontakt" class="header__button colorSchemes__whiteDarkGray header__dropdownContainer--content">
+                        KONTAKT
+                    </a>
+    
+                    <button class="header__button colorSchemes__whiteDarkGray fonts__ordinary header__dropdownContainer--content">
+                        ULOGUJ SE
+                    </button>
+                </div>
+            </div>
+        </header>
+
+        <main>
+            <section class="desktopLayout--alignCenter">
+                <div class="main__gridSystem main__backgroundImage--COA">
+                    <video autoplay loop muted poster="images/poster.png" class="main__gridSystem__gridElement--video visibleOnDesktop">
+                        <source src="videos/carVideo.mp4" type="video/mp4">
+                    </video>
+
+                    <div class="main__CTA colorSchemes__whiteTransparent paddings__horizontal paddings__vertical main__gridSystem__gridElement--CTA">
+                        <h1 class="main__CTA--proposition">
+                            Najveći izbor vozila u Srbiji                                   
+                        </h1>
+    
+                        <p>
+                            Dobrodošli na sajt sa najvećim izborom vozila, rezervnih delova i pripadajuće opreme u Srbiji!                                                                  
+                        </p>
+    
+                        <button id="kupovina" class="main__button main__CTA fonts__stylish colorSchemes__whiteTangerine">
+                            KUPOVINA
+                        </button>
+    
+                        <button id="prodaja" class="main__button main__CTA fonts__stylish colorSchemes__whiteTangerine">
+                            PRODAJA
+                        </button>
+                    </div>
+
+                    <div id="dialogue" class="paddings__horizontal--small paddings__vertical colorSchemes__whiteDarkGray main__gridSystem__gridElement--dialogue">
+                        <div class="desktopLayout--alignRight mobileLayout--alignRight">
+                            <button id="zatvori" class="main__button fonts__stylish colorSchemes__whiteTangerine">
+                                x
+                            </button>
+                        </div>
+                        
+                        <div class="paddings__vertical">
+                            <input type="text" placeholder="Proizvođač" class="paddings__vertical">
+                        </div>
+
+                        <div class="paddings__vertical">
+                            <input type="text" placeholder="Marka" class="paddings__vertical">
+                        </div>
+
+                        <div class="paddings__vertical">
+                            <input type="text" placeholder="Godište" class="paddings__vertical">
+                        </div>
+
+                        <div class="paddings__vertical">
+                            <input type="text" placeholder="Cena" class="paddings__vertical">
+                        </div>
+
+                        <div class="paddings__vertical">
+                            <input type="text" placeholder="Vrsta goriva" class="paddings__vertical">
+                        </div>
+
+                        <div class="paddings__vertical">
+                            <button class="main__button main__CTA fonts__stylish colorSchemes__whiteTangerine">
+                                Pretraži
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="oglasi" class="paddings__vertical--large paddings__horizontal">
+                <div class="paddings__horizontal--small">
+                    <h2 class="main__sectionTitle fonts__stylish desktopLayout--alignCenter paddings__vertical">
+                        <span class="colorSchemes__darkGrayTransparent">Najpopularniji oglasi</span>
+                    </h2>
+
+                    <div class="desktopLayout">
+                        <div class="column50 paddings__horizontal--small paddings__vertical">
+                            <p id="carouselInfoCars" class="colorSchemes__whiteDarkGray mobileLayout--alignLeft paddings__horizontal--small">                          
+                            </p>
+
+                            <div class="desktopLayout--alignCenter mobileLayout--alignCenter colorSchemes__whiteTangerine">
+                                <img src="images/fiat.jpg" alt="carousel image" id="carouselImageCars" class="main__carouselImage">
+                            </div>                        
+                        </div>
+
+                        <div class="column50 paddings__horizontal--small paddings__vertical">
+                            <p id="carouselInfoBikes" class="colorSchemes__whiteDarkGray mobileLayout--alignLeft paddings__horizontal--small">                          
+                            </p>
+
+                            <div class="desktopLayout--alignCenter mobileLayout--alignCenter colorSchemes__whiteTangerine">
+                                <img src="images/bike1.jpg" alt="carousel image" id="carouselImageBikes" class="main__carouselImage">
+                            </div>                        
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="uslugeKojeNudimo" class="desktopLayout--alignCenter paddings__vertical--large">
+                <h2 class="main__sectionTitle fonts__stylish paddings__vertical">
+                    <span class="colorSchemes__chilliTransparent">USLUGE</span> KOJE NUDIMO
+                </h2>
+
+                <div class="desktopLayout mobileLayout mobileLayout--reverse paddings__vertical paddings__horizontal">
+                    <div class="column50 column100-mobile desktopLayout--alignCenter">
+                        <a href="https://www.osiguranik.com/" target="_blank" class="main__logo fonts__stylish paddings__vertical">
+                            <img class="main__circularImage" src="images/insurance.jpg" alt="Insurance image">                        
+                        </a>
+    
+                        <p>
+                            <span class="colorSchemes__whiteDarkGray paddings__vertical">Kliknite na sliku da posetite Osiguranik.com</span>
+                        </p>
+                    </div>
+    
+                    <div class="column50 column100-mobile desktopLayout--alignCenter">
+                        <p class="fonts__ordinary paddings__vertical paddings__horizontal desktopLayout--alignLeft">
+                            Pružamo usluge kupovine i prodaje, kao i osiguranje vozila, promociju oglasa i povoljnosti prilikom kreditiranja.
+                            Tu pre svega mislimo na osiguranje od autoodgovornosti, kasko osiguranje i pomoć na putu.
+                            <br>
+                            Osiguranik.com je na samo jedan klik od Vas.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="nasiPartneri" class="desktopLayout--alignCenter paddings__vertical--large paddings__horizontal main__backgroundImage colorSchemes__whiteTransparent">
+                <div>
+                    <h2 class="main__sectionTitle fonts__stylish paddings__vertical">
+                        NAŠI PARTNERI
+                    </h2>
+    
+                    <p class="paddings__vertical">
+                        Sarađujemo sa 8 auto salona, 16 auto placeva i dve lizing kuće.
+                    </p>
+                </div>
+
+                <div class="desktopLayout mobileLayout">
+                    <div class="column25 column25-mobile paddings__horizontal--small">
+                        <img src="images/kia.jpg" alt="kia logo" class="main__circularImage main__circularImage--grayscale" >
+                    </div>
+
+                    <div class="column25 column25-mobile paddings__horizontal--small">
+                        <img src="images/raiffeisen.jpg" alt="raiffeisen logo" class="main__circularImage main__circularImage--grayscale">
+                    </div>
+
+                    <div class="column25 column25-mobile paddings__horizontal--small">
+                        <img src="images/s-leasing.jpg" alt="s-leasing logo" class="main__circularImage main__circularImage--grayscale">
+                    </div>
+
+                    <div class="column25 column25-mobile paddings__horizontal--small">
+                        <img src="images/toyota.png" alt="toyota logo" class="main__circularImage main__circularImage--grayscale">
+                    </div>
+                </div>
+            </section>
+
+            <section id="oNama" class="desktopLayout desktopLayout--alignLeft paddings__vertical--large paddings__horizontal">
+                <div class="column50">
+                    <h2 class="main__sectionTitle fonts__stylish paddings__vertical desk">
+                        O <span class="colorSchemes__chilliTransparent">NAMA</span>
+                    </h2>
+    
+                    <div class="fonts__ordinary paddings__horizontal--small">
+                        <p class="paddings__vertical">
+                            Kažu da je lakše postati broj jedan u nečemu nego na toj poziciji ostati.
+                            Za proteklih 17 godina sajtu Polovni automobili to je pošlo za rukom.
+                        </p>
+                        
+                        <p class="paddings__vertical">
+                            Osim što smo dugogodišnji lideri na tržištu, mnogima smo i prva asocijacija kada se pomene kupovina ili prodaja automobila u Srbiji.  
+                            <br>
+                            Kako nam to polazi za rukom? Tako što se "ispod haube" sajta Polovni automobili kriju 44 zaposlena lica, 
+                            koji su vođeni motom: 
+                            <br>
+                            <span class="colorSchemes__chilliTransparent fonts__stylish">Vredimo onoliko koliko ste Vi uz nas</span>. 
+                        </p>
+
+                        <p class="paddings__vertical">
+                            A uz nas je svakog meseca više od 3 miliona jedinstvenih posetilaca i gotovo 3.000 klijenata.
+                            I dajemo sve od sebe da tako i ostane. 
+                        </p>
+                    </div>
+                </div>
+
+                <div class="column50 desktopLayout--alignCenter">
+                    <img src="images/skoda.jpg" class="main__circularImage" alt="Skoda image">              
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <section id="kontakt" class="paddings__horizontal paddings__vertical colorSchemes__whiteDarkGray">
+                <h2 class="fonts__stylish">
+                    KONTAKT
+                </h2>
+                
+                <div class="desktopLayout">
+                    <div class="column50">
+                        <p>
+                            Telefon: +381 24 415 53 45
+                        </p>
+    
+                        <p>
+                            E-mail:
+                        </p>
+                    </div>
+                    
+                    <div class="column50 desktopLayout--alignRight">
+                        <a href="https://www.facebook.com/polovniautomobili" target="_blank"><img src="icons/facebook.png" alt="facebook social media icon"></a>
+                        <a href="https://www.instagram.com/polovnjaci/" target="_blank"><img src="icons/instagram.png" alt="instagram social media icon"></a>
+                        <a href="https://twitter.com/PolovnaVozila" target="_blank"><img src="icons/twitter.png" alt="twitter social media icon"></a>
+                        <a href="https://www.youtube.com/user/polovniautomobili" target="_blank"><img src="icons/youtube.png" alt="youtube social media icon"></a>
+                    </div>
+                </div>
+            </section>
+        </footer>
+
+        <script src="scripts/script.js"></script>
+    </body>
+</html>

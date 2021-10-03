@@ -1,0 +1,388 @@
+/*CSS reset begin*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+a {
+  display: inline-block;
+  text-decoration: none;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+video {
+  position: relative;
+  z-index: -1;
+  width: 100%;
+  height: auto;
+  display: block;
+  -webkit-filter: brightness(0.2);
+          filter: brightness(0.2);
+}
+
+button {
+  border-style: none;
+}
+
+input {
+  max-width: 80%;
+}
+
+/*CSS reset end */
+::-moz-selection {
+  color: white;
+  background-color: #f28500;
+}
+::selection {
+  color: white;
+  background-color: #f28500;
+}
+
+.paddings__horizontal {
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+.paddings__horizontal--small {
+  padding-left: 1%;
+  padding-right: 1%;
+}
+
+.paddings__vertical {
+  padding-top: 1%;
+  padding-bottom: 1%;
+}
+
+.paddings__vertical--large {
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+
+.colorSchemes__whiteDarkGray {
+  color: white;
+  background-color: #323232;
+}
+
+.colorSchemes__whiteJetBlack {
+  color: white;
+  background-color: #0a0a0a;
+}
+
+.colorSchemes__whiteChilli {
+  color: white;
+  background-color: #e32227;
+}
+
+.colorSchemes__whiteTangerine {
+  color: white;
+  background-color: #f28500;
+}
+
+.colorSchemes__amberDarkGray {
+  color: #ffbf00;
+  background-color: #323232;
+}
+
+.colorSchemes__tangerineJetBlack {
+  color: #f28500;
+  background-color: #0a0a0a;
+}
+
+.colorSchemes__amberTransparent {
+  color: #ffbf00;
+  background-color: transparent;
+}
+
+.colorSchemes__chilliTransparent {
+  color: #e32227;
+  background-color: transparent;
+}
+
+.colorSchemes__whiteTransparent {
+  color: white;
+  background-color: transparent;
+}
+
+.colorSchemes__jetBlackTangerine {
+  color: #0a0a0a;
+  background-color: #f28500;
+}
+
+.colorSchemes__darkGrayTransparent {
+  color: #323232;
+  background-color: transparent;
+}
+
+.fonts__stylish {
+  font-family: 'Play', sans-serif;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.fonts__ordinary {
+  font-size: 1rem;
+  font-family: 'Open Sans', sans-serif;
+}
+
+@media screen and (max-width: 1024px) {
+  .column100-mobile {
+    width: 100%;
+  }
+  .column75-mobile {
+    width: 75%;
+  }
+  .column50-mobile {
+    width: 50%;
+  }
+  .column25-mobile {
+    width: 25%;
+  }
+  .mobileLayout {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .mobileLayout--spaceAround {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .mobileLayout--alignRight {
+    text-align: right;
+  }
+  .mobileLayout--alignLeft {
+    text-align: left;
+  }
+  .mobileLayout--alignCenter {
+    text-align: center;
+  }
+  .mobileLayout--reverse {
+    -ms-flex-wrap: wrap-reverse;
+        flex-wrap: wrap-reverse;
+  }
+  .visibleOnDesktop {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1025px) {
+  .column100 {
+    width: 100%;
+  }
+  .column75 {
+    width: 75%;
+  }
+  .column50 {
+    width: 50%;
+  }
+  .column25 {
+    width: 25%;
+  }
+  .desktopLayout {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .desktopLayout--alignLeft {
+    text-align: left;
+  }
+  .desktopLayout--alignCenter {
+    text-align: center;
+  }
+  .desktopLayout--alignRight {
+    text-align: right;
+  }
+  .visibleOnMobile {
+    display: none;
+  }
+}
+
+.header__button {
+  cursor: pointer;
+  padding: 1% 1% 1% 1%;
+  display: inline-block;
+}
+
+.header__button--menu {
+  border-radius: 10%;
+}
+
+.header__button:hover {
+  color: #f28500;
+  background-color: #323232;
+  -webkit-transition-duration: 1s;
+          transition-duration: 1s;
+}
+
+.header__dropdownContainer {
+  position: absolute;
+  display: none;
+  z-index: 3;
+}
+
+.header__dropdownContainer--content {
+  width: 100%;
+}
+
+@media screen and (max-width: 1024px) {
+  .main__CTA {
+    font-size: 1.3rem;
+  }
+}
+
+@media screen and (min-width: 1025px) {
+  .main__CTA {
+    font-size: 2rem;
+  }
+}
+
+.main__CTA--proposition {
+  font-weight: bold;
+}
+
+@media screen and (max-width: 1024px) {
+  .main__CTA--proposition {
+    font-size: 2rem;
+  }
+}
+
+@media screen and (min-width: 1025px) {
+  .main__CTA--proposition {
+    font-size: 4rem;
+  }
+}
+
+.main__carouselImage {
+  height: 30vh;
+  width: auto;
+  max-width: 100%;
+}
+
+.main__sectionTitle {
+  font-size: 2rem;
+}
+
+.main__button {
+  cursor: pointer;
+  border-radius: 2rem;
+}
+
+@media screen and (min-width: 490px) {
+  .main__button {
+    padding: 1% 2% 1% 2%;
+  }
+}
+
+.main__button:hover {
+  color: #f28500;
+  background-color: #323232;
+  -webkit-transition-duration: 1s;
+          transition-duration: 1s;
+}
+
+.main__circularImage {
+  border-radius: 5%;
+}
+
+.main__circularImage--grayscale {
+  -webkit-filter: grayscale(0.9);
+          filter: grayscale(0.9);
+}
+
+.main__backgroundImage {
+  background: rgba(0, 0, 0, 0.85) url(../images/carBackground.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-blend-mode: darken;
+}
+
+@media screen and (max-width: 1024px) {
+  .main__backgroundImage--COA {
+    background: rgba(0, 0, 0, 0.85) url(../images/volkswagen.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-blend-mode: darken;
+  }
+}
+
+.main__gridSystem {
+  display: -ms-grid;
+  display: grid;
+  grid-template: repeat(3, [row] 1fr)/repeat(3, [col] 1fr);
+}
+
+.main__gridSystem__gridElement--video {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  justify-items: center;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-column: 1 / span 3;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 3;
+  grid-row: 1 / span 3;
+}
+
+.main__gridSystem__gridElement--CTA {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  justify-items: center;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-column: 1 / span 3;
+  -ms-grid-row: 2;
+  grid-row: 2;
+  z-index: 2;
+}
+
+.main__gridSystem__gridElement--dialogue {
+  border-radius: 1rem;
+  display: none;
+  -ms-grid-column: 2;
+  grid-column: 2;
+  -ms-grid-row: 2;
+  grid-row: 2;
+  z-index: 3;
+}
+/*# sourceMappingURL=stylesheet.css.map */
